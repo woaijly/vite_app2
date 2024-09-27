@@ -20,11 +20,13 @@ export default {
   ],
   server: {
     proxy: {
+      // 匹配所有以 '/v3pz' 开头的请求
       '/v3pz': {
-        target: 'https://v3pz.itndedu.com',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/v3pz/, '/v3pz'),
+        target: 'https://v3pz.itndedu.com/', // 目标服务器
+        changeOrigin: true, // 推荐开启
+        rewrite: (path) => path.replace(/^\/woaijly.github.io\/v3pz/, '/v3pz'), // 重写路径
       },
+
     },
   },
   
