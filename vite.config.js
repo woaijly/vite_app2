@@ -6,16 +6,16 @@ import { VantResolver } from '@vant/auto-import-resolver';
 import vue from '@vitejs/plugin-vue';
 
 export default {
-  
-  base:'/vite_app2/',
+
+  base: '/vite_app2/',
 
   plugins: [
     vue(),
     AutoImport({
-      resolvers: [VantResolver(),ElementPlusResolver()],
+      resolvers: [VantResolver(), ElementPlusResolver()],
     }),
     Components({
-      resolvers: [VantResolver(),ElementPlusResolver()],
+      resolvers: [VantResolver(), ElementPlusResolver()],
     }),
   ],
   server: {
@@ -26,8 +26,8 @@ export default {
         changeOrigin: true, // 推荐开启
         rewrite: (path) => path.replace(/^\/v3pz/, '/v3pz'), // 重写路径
       },
-      
+
     },
   },
-  
+
 };
