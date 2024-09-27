@@ -7,7 +7,7 @@ import vue from '@vitejs/plugin-vue';
 
 export default {
   server: { port: 4500 },
-  base:'/ git remote add origin/',
+  base:'/vite_app2/',
   
   plugins: [
     vue(),
