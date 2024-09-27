@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // 创建实例时配置默认值
 const http = axios.create({
-  baseURL: 'https:/v3pz.itndedu.com/v3pz',
+  
   timeout: 5000,
   headers:{
     "terminal":"h5",
