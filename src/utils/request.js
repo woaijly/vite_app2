@@ -6,7 +6,7 @@ const http = axios.create({
   timeout: 5000,
   headers:{
     "terminal":"h5",
-     'content-type' : 'application/json'
+    
   }
 });
 // 添加请求拦截器
