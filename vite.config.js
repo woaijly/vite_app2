@@ -7,7 +7,7 @@ import vue from '@vitejs/plugin-vue';
 
 export default {
   
-  base:'/vite_app2/',
+  base:'/',
 
   plugins: [
     vue(),
@@ -20,11 +20,10 @@ export default {
   ],
   server: {
     proxy: {
-      // 匹配所有以 '/v3pz' 开头的请求
       '/v3pz': {
-        target: 'https://v3pz.itndedu.com/v3pz', // 目标服务器
-        changeOrigin: true, // 推荐开启
-        rewrite: (path) => path.replace(/^\/v3pz/, ''), // 重写路径
+        target: 'https://v3pz.itndedu.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/v3pz/, '/v3pz'),
       },
     },
   },
