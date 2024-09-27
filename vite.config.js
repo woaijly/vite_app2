@@ -8,9 +8,7 @@ import vue from '@vitejs/plugin-vue';
 export default {
   server: { port: 4500 },
   base:'/ git remote add origin/',
-  build: {
-    outDir: "docs"
-  },
+  
   plugins: [
     vue(),
     AutoImport({
