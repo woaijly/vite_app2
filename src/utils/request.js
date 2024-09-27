@@ -5,7 +5,8 @@ const http = axios.create({
   baseURL: 'https:/v3pz.itndedu.com/v3pz',
   timeout: 5000,
   headers:{
-    "terminal":"h5"
+    "terminal":"h5",
+     'content-type' : 'application/json'
   }
 });
 // 添加请求拦截器
