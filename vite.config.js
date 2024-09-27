@@ -7,7 +7,7 @@ import vue from '@vitejs/plugin-vue';
 
 export default {
   
-  base:'/',
+  base:'/vite_app2/',
 
   plugins: [
     vue(),
